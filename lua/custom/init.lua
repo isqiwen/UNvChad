@@ -16,7 +16,7 @@ autocmd("FileType", {
 
 -- commands
 
--- I dont use shade.nvim/autosave.nvim all the time so made commands for them 
+-- I dont use shade.nvim/autosave.nvim all the time so made commands for them
 -- So this makes easy to lazy load them at cmds
 
 new_cmd("EnableShade", function()
@@ -26,3 +26,6 @@ end, {})
 new_cmd("EnableAutosave", function()
    require("autosave").setup()
 end, {})
+
+-- load global vim setting
+require "custom.settings"
