@@ -26,4 +26,23 @@ M.shade = {
    },
 }
 
+M.general = {
+   i = {
+      -- go to beginning and end
+      ["<C-a>"] = { "<ESC>^i", "論  beginning of line" },
+      ["<C-e>"] = { "<End>", "壟  end of line" },
+   },
+
+   n = {
+      ["<C-u>"] = { "9k", "  page up"},
+      ["<C-d>"] = { "9j", "  page down"},
+   },
+}
+
+M.disabled = {
+   i = {
+      ["<C-b>"] = ""
+   },
+}
+
 return M
